@@ -127,7 +127,7 @@ Now just map your routes:
 
 Your application controller will be responsible for persisting your session. This is my favorite part because it is so easy. I am able to do in 2 methods what used to take 5 to 6 different methods:
 
-  # app/controllers/application.rb
+  # app/controllers/application_controller.rb
   class ApplicationController < ActionController::Base
     filter_parameter_logging :password, :password_confirmation
     helper_method :current_user_session, :current_user
